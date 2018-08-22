@@ -11,20 +11,127 @@
     <div id="form-container">
         <p id="description">Let us know more about your travel needs!</p>
         <form action="" id="survey-form">
-            <div class="formRow">
-                <label for="name">*Name:</label>
-                <input type="text" name="name" id="name" required placeholder="Enter your name">
-            </div>
-            <div class="formRow">
-                <label for="email">*Email:</label>
-                <input type="email" name="email" id="email" required placeholder="Enter your email">
-            </div>
-            <div class="formRow">
-                    <label for="age">Age:</label>
-                    <input type="number" name="age" id="age" placeholder="Enter age here">
-                </div>
-        </form>
 
+            <div class="formRow">
+                <div class="labels">
+                    <label id="name-label" for="name">*Name:</label>
+                </div>
+                <div class="controls">    
+                    <input type="text" name="name" id="name" required placeholder="Enter your name">
+                </div>
+            </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <label id="email-label" for="email">*Email:</label>
+                </div>
+                <div class="controls">
+                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+                </div>
+            </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <label id="number-label" for="number">Age:</label>
+                </div>
+                <div class="controls">
+                    <input type="number" name="age" id="number" placeholder="Enter age here" min="18" max="89">
+                </div>
+            </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <label for="occupation">Occupation:</label>
+                </div>
+                <div class="controls">
+                    <select name="occupation" id="dropdown">
+                        <option value="none">-- Select your occupation --</option>
+                        <optgroup>
+                            <option value="full-time">Full-time employee</option>
+                            <option value="part-time">Part-time employee</option>
+                            <option value="Casual">Casual employee</option>
+                            <option value="student">Student</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formRow">
+                    <div class="labels">
+                        <p id="duration">Do you want to see packages for what durations?</p>
+                    </div>
+                    <div class="controls">
+                        <div id="duration-options">
+                            <input type="checkbox" name="activities" id="1week" value="1week">
+                            <label for="1week">1 week</label></br>
+                            <input type="checkbox" name="activities" id="2weeks=" value="2weeks">
+                            <label for="2weeks">2 weeks</label></br>
+                            <input type="checkbox" name="activities" id="3weeks" value="3weeks">
+                            <label for="3weeks">3 weeks</label></br>
+                            <input type="checkbox" name="activities" id="4weeks" value="4weeks">
+                            <label for="4weeks">4 weeks</label></br>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <p id="destination-label">What destination are you interested in?</p>
+                </div>
+                <div class="controls">
+                    <div id="destination-options">
+                        <input type="radio" name="destination" id="north america" value="north america">
+                        <label for="north america">North America</label></br>
+                        <input type="radio" name="destination" id="latin america" value="latin america">
+                        <label for="latin america">Latin America</label></br>
+                        <input type="radio" name="destination" id="europe" value="europe">
+                        <label for="europe">Europe</label></br>
+                        <input type="radio" name="destination" id="africa" value="africa">
+                        <label for="africa">Africa</label></br>
+                        <input type="radio" name="destination" id="asia" value="asia">
+                        <label for="asia">Asia</label></br>
+                        <input type="radio" name="destination" id="oceania" value="oceania">
+                        <label for="oceania">Oceania</label></br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <p id="activities-label">What activities are you interested in?</p>
+                </div>
+                <div class="controls">
+                    <div id="activities-options">
+                        <input type="checkbox" name="activities" id="sightseeing" value="sightseeing">
+                        <label for="sightseeing">Sightseeing</label></br>
+                        <input type="checkbox" name="activities" id="museums" value="museums">
+                        <label for="museums">Museums</label></br>
+                        <input type="checkbox" name="activities" id="restaurants" value="restaurants">
+                        <label for="restaurants">Restaurants</label></br>
+                        <input type="checkbox" name="activities" id="night life" value="night life">
+                        <label for="night life">Night life</label></br>
+                        <input type="checkbox" name="activities" id="shopping" value="shopping">
+                        <label for="shopping">Shopping</label></br>
+                        <input type="checkbox" name="activities" id="beach" value="beach">
+                        <label for="beach">Beach</label></br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formRow">
+                <div class="labels">
+                    <label for="comments">Do you have any additional requirements?</label>
+                </div>
+                <div class="controls">
+                    <textarea name="comments" id="comments" cols="30" rows="10" maxlength="512" placeholder="Enter any additional requirements here"></textarea>
+                </div>
+            </div>
+
+
+            <button id="submit">Submit</button>
+        </form>
     </div>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    

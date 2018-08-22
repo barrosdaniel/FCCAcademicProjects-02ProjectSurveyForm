@@ -7,37 +7,78 @@ body {
     text-align: center;
 }
 
+h1 {
+    color: #e9e9e9;
+}
+
 div#form-container {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 1em;
     border-radius: 10px;
     background-color: #e9e9e9;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-body h1 {
-    color: #e9e9e9;
+p {
+    margin: 0;
 }
 
+p#description {
+    margin: 20px 0;
+    font-size: 1.4em;
+}
 div.formRow {
     padding: 0.75em;
     text-align: start;
+    vertical-align: top;
 }
 
-label {
+div.labels {
     display: inline-block;
-    width: 300px;
+    width: 40%;
     text-align: right;
+    vertical-align: top;
     padding-right: 10px;
 }
 
-/* input {
-    position: relative;
-    left: 50px;
-} */
+div.controls {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+}
 
+input, textarea {
+    line-height: 1.5;
+    font-size: 0.8em;
+    width: 70%;
+    font-family: 'Raleway', sans-serif;
+}
 
+select {
+    width: 70%;
+}
 
+div#duration-options input {
+    width: 20px;
+}
 
+div#destination-options input {
+    width: 20px;
+}
 
+div#activities-options input {
+    width: 20px;
+}
+
+button {
+    margin-top: 0.75em;
+    padding: 0.75em;
+    text-align: center;
+    background-color: dodgerblue;
+    color:#e9e9e9;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    width: 160px;
+}
